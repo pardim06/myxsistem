@@ -1,0 +1,52 @@
+<svg width="1400" height="400" viewBox="0 0 1400 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0D1320"/>
+      <stop offset="100%" stop-color="#060810"/>
+    </linearGradient>
+    <linearGradient id="xGrad" x1="150" y1="150" x2="550" y2="550" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#00D4FF"/>
+      <stop offset="100%" stop-color="#1B6FFF"/>
+    </linearGradient>
+    <linearGradient id="ensoGrad" x1="264" y1="137" x2="436" y2="563" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#00D4FF"/>
+      <stop offset="50%" stop-color="#1B6FFF"/>
+      <stop offset="100%" stop-color="#00D4FF"/>
+    </linearGradient>
+    <linearGradient id="xtext" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#00D4FF"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="55%">
+      <stop offset="0%" stop-color="#1B6FFF" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#1B6FFF" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1400" height="400" fill="url(#bgGrad)"/>
+
+  <!-- icon: 700x700 source scaled to 320x320, placed with 40px padding, vertical-centered on 400px canvas -->
+  <g transform="translate(40,40) scale(0.4571)">
+    <circle cx="350" cy="350" r="230" fill="url(#glow)"/>
+    <path d="M 263.84 136.75 A 230 230 0 1 0 436.16 136.75" fill="none" stroke="url(#ensoGrad)" stroke-width="28" stroke-linecap="round"/>
+    <circle cx="263.84" cy="136.75" r="8" fill="#00D4FF"/>
+    <circle cx="436.16" cy="136.75" r="8" fill="#00D4FF"/>
+    <g stroke="url(#xGrad)" stroke-linecap="round" fill="none">
+      <line x1="250" y1="250" x2="450" y2="450" stroke-width="7" opacity="0.5"/>
+      <line x1="262" y1="262" x2="438" y2="438" stroke-width="17"/>
+      <line x1="282" y1="282" x2="418" y2="418" stroke-width="29"/>
+      <line x1="315" y1="315" x2="385" y2="385" stroke-width="39"/>
+    </g>
+    <g stroke="#FFFFFF" stroke-linecap="round" fill="none">
+      <line x1="450" y1="250" x2="255" y2="445" stroke-width="7" opacity="0.4"/>
+      <line x1="435" y1="262" x2="268" y2="432" stroke-width="16"/>
+      <line x1="412" y1="282" x2="292" y2="405" stroke-width="27"/>
+      <line x1="368" y1="325" x2="332" y2="360" stroke-width="35"/>
+    </g>
+    <circle cx="455" cy="455" r="8" fill="#00D4FF"/>
+    <circle cx="470" cy="468" r="3.5" fill="#1B6FFF" opacity="0.8"/>
+    <circle cx="248" cy="443" r="6" fill="#FFFFFF" opacity="0.85"/>
+  </g>
+
+  <!-- wordmark: baseline calculated so cap-height is vertically centered against the 320px-tall icon block (y:40-360, center=200) -->
+  <text x="410" y="240" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="130" letter-spacing="1" fill="#FFFFFF">Sistemy<tspan fill="url(#xtext)">X</tspan></text>
+</svg>
